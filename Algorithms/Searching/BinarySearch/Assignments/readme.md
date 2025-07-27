@@ -1,0 +1,1 @@
+# 1-> K different pairs in an array

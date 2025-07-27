@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int,vector<int>,greater<int>> pq;
+
+        // Initail state->insert first k elements into min-heap
+        for(int i=0;i<k;i++){
+            pq.push(nums[i]);
+        }
+
+        // process remaining elements
+        for(int i=k;i<nums.size();i++){
+            if(nums[i] > pq.top()){
+                pq.pop();
+                pq.push(nums[i]);
+            }
+        }
+
+        return pq.top();
+
+    }
+};
