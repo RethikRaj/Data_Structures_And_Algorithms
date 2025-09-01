@@ -71,3 +71,46 @@ int coinChange(vector<int>& coins, int amount) {
     }
     return ans;
 } 
+
+
+// Method 2 : Similar to other questions without using for loop
+class Solution {
+public:
+    int solveUsingRecursion(vector<int>& coins, int remAmount, int index){
+        // base case
+        if(remAmount == 0){
+            return 0;
+        }
+
+        if(index >= coins.size()){
+            return INT_MAX;
+        }
+
+        // Magic line
+        int includeAns = INT_MAX;
+        int excludeAns = INT_MAX;
+        if(remAmount - coins[index] >= 0){
+            int recAns = solveUsingRecursion(coins, remAmount - coins[index], index);
+            if(recAns != INT_MAX){
+                includeAns = 1 + recAns;
+            }
+        }
+
+        excludeAns = 0 + solveUsingRecursion(coins, remAmount, index + 1);
+        
+        int currAns = min(includeAns, excludeAns);
+        return currAns;
+    }
+
+    
+
+    int coinChange(vector<int>& coins, int amount) {
+        int ans = solveUsingRecursion(coins, amount , 0);
+
+
+        if(ans == INT_MAX){
+            return -1;
+        }
+        return ans;
+    }
+};
