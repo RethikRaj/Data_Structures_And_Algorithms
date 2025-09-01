@@ -15,30 +15,19 @@ int removeDuplicatesFromSortedArray(int arr[],int size){
     return uniqueCount;
 }
 
-// Method 2 : Two Pointer Approach
-int removeDuplicates(vector<int>& arr) {
-    int index = 1;
-    int uniqueCount = 1; // since 1st element is always unique;
-    while(index < arr.size()){
-        if(arr[index] != arr[uniqueCount-1]){
-            arr[uniqueCount] = arr[index];
-            uniqueCount++;
-        }
-        index++;
-    }
-    return uniqueCount;
+// Method 2 : Two Pointer Approach (IMP)
+int removeDuplicates(vector<int>& nums) {
+    int uniqueIndex = 0; // denotes the position of previous unique element's index
 
-    // Method2 to write same code above
-    // int uniquePosition = 0;
-    // int index = 1;
-    // while(index < arr.size()){
-    //     if(arr[index] != arr[uniquePosition]){
-    //         uniquePosition++;
-    //         arr[uniquePosition] = arr[index];
-    //     }
-    //     index++;
-    // }
-    // return uniquePosition + 1;
+    // 'i' is used to traverse array
+    for(int i=1;i<nums.size();i++){
+        if(nums[i] != nums[uniqueIndex]){
+            uniqueIndex++;
+            nums[uniqueIndex] = nums[i];
+        }
+    }
+
+    return uniqueIndex + 1;
 }
 
 void printArray(int arr[],int size){

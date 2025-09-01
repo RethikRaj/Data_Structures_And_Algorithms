@@ -23,3 +23,15 @@ bool isSorted2(int arr[], int n) {
 
   return true;
 }
+
+bool isSorted3(int arr[], int n){
+    int prev = arr[0];
+        
+    for(int i=1;i<n;i++){
+        if (prev > arr[i]){
+            return false;
+        }
+        prev = arr[i];
+    }
+    return true;
+}

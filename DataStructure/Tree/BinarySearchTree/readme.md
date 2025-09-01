@@ -13,7 +13,6 @@
 # 12->Maximum sum BST in binary tree(SUPERB)
 
 # Assignments
-# 1->Ceil in BST
-    # 1.1->Floor in BST
+# 1->Inorder Predecessor and Inorder successor in BST
 # 2->Check whether a binary tree is BST
 

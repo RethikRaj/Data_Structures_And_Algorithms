@@ -15,6 +15,7 @@
 # 10-> array is sorted or not
 # 11->Remove duplicates from sorted array or getUniqueCount;
     11.1 -> Remove Element (LeetCode : 27)
+    11.2->Remove duplicates from sorted array-II
 # 12->Move Zeroes to End  (must maintain relative order)
     12.1 -> move Zeroes to front
 # 13->Missing Number.
@@ -44,18 +45,3 @@
 # 33->Perfect peak in array
 # 34->Make equal elements Array
 
-#include <iostream>
-using namespace std;
-
-void printArray(int arr[],int size){
-    for(int i=0;i<size;i++){
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
-
-int main(){
-    int arr[] = {10,5,1,12,10,12,1};
-    int n = 7;
-    
-}
