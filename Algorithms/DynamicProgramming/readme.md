@@ -15,3 +15,4 @@
 # 4->Longest Common Subsequence
 # 5->Unique Paths
 # 6->Minimum costs for Tickets (can be solved using both 1D dp and 2D dp)
+# 7->Longest Increasing Subsequence

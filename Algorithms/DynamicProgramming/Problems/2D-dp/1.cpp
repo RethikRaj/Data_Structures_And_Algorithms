@@ -8,7 +8,7 @@ class Solution {
   
     int solveUsingRecursion(int remCapacity, vector<int>& wt, vector<int>& val,int index){
         // base case
-        if(remCapacity <= 0){
+        if(remCapacity == 0){
             return 0;
         }
         if(index >= wt.size()){

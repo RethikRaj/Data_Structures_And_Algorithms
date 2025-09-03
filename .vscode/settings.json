@@ -1,12 +1,14 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
+        "*.dbclient-js": "javascript",
         "iostream": "cpp",
         "vector": "cpp",
         "ostream": "cpp",
         "string": "cpp",
         "cmath": "cpp",
         "unordered_set": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "valarray": "cpp"
     }
 }
