@@ -35,3 +35,5 @@
 | 5.03  | Previous Smaller Element
 | 5.04  | Previous greater Element
 | 5.05  | Largest Rectangle in Histogram
+| 5.06  | asteroid collision
+
