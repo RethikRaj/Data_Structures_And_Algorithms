@@ -1,8 +1,21 @@
 # Arrays Problems
 
-## 1.
+## 1.Implementation Based
 | Code  | Problem Name          
 |-------|------------------------
 | 1.01  | Implement 1 stack using array        
 | 1.02  | Implement 2 stack using array     
-| 1.03  | Implement n stack using array           
+| 1.03  | Implement n stack using array     
+
+## 2.Reversal property
+
+
+## 3.Stack + Recursion + Backtracking
+| Code  | Problem Name          
+|-------|------------------------
+| 3.01  | PrintMiddle      
+| 3.02  | InsertAtBottom   
+| 3.03  | CheckSorted 
+| 3.04  | SortedInsert
+| 3.05  | Reverse a Stack
+| 3.06  | Sort a Stack
