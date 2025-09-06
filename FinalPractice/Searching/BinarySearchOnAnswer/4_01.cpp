@@ -17,16 +17,39 @@ long long getSum(vector<int> &arr) {
     return sum;
 }
 
+// Method 1 :
+// bool canWePaintInGivenTime(long long time, int A, int B, vector<int> &arr) {
+//     int z = 0; // index of board and also we can get numberOfBoardsPainted with z
+//     for (int painter = 0; painter < A && z < arr.size(); painter++) {
+//         long long timeTaken = 0;
+//         while (z < arr.size() && timeTaken + (1LL * arr[z] * B ) <= time) {
+//             timeTaken += 1LL * arr[z] * B;
+//             z++;
+//         }
+//     }
+//     return z == arr.size();
+// }
+
+// Method 2 : 
 bool canWePaintInGivenTime(long long time, int A, int B, vector<int> &arr) {
-    int z = 0; // index of board and also we can get numberOfBoardsPainted with z
-    for (int painter = 0; painter < A && z < arr.size(); painter++) {
-        long long timeTaken = 0;
-        while (z < arr.size() && timeTaken + (1LL * arr[z] * B ) <= time) {
-            timeTaken += 1LL * arr[z] * B;
-            z++;
+    int painter = 1;
+    long long timeTaken = 0;
+
+    int i = 0; // denotes board
+    while(i < arr.size()){
+        if(timeTaken + (1LL * arr[i] * B) <= time) {
+            timeTaken += 1LL * arr[i] * B;
+            i += 1;
+        }else{
+            // currpainter cant paint this board
+            painter++;
+            if(painter > A){
+                return false;
+            }
+            timeTaken = 0;
         }
     }
-    return z == arr.size();
+    return painter <= A;
 }
 
 int paint(int A, int B, vector<int> &C) {
