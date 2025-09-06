@@ -1,4 +1,4 @@
-# Arrays Problems
+# Stack Problems
 
 ## 1.Implementation Based
 | Code  | Problem Name          
@@ -19,3 +19,10 @@
 | 3.04  | SortedInsert
 | 3.05  | Reverse a Stack
 | 3.06  | Sort a Stack
+
+## 4. Valid Paranthesis Pattern
+| Code  | Problem Name          
+|-------|------------------------
+| 4.01  | Valid Paranthesis  
+| 4.02  | Check for redundant brackets and count it   
+
