@@ -6,12 +6,15 @@
 | 2.01  | Binary Search  
 | 3.01  | Lower Bound
 | 3.02  | Upper Bound
-| 3.02  | Find First and Last Position of Element in Sorted Array
+| 3.03  | Find First and Last Position of Element in Sorted Array
+| 3.04  | Intersection of Two Arrays - II
+| 3.05  | Intersection of Two Arrays - I
 | 4.01  | Search in Rotated Sorted Array
 | 4.02  | Find Minimum in Rotated Sorted Array
 | 6.01  | Search in a 2D matrix
-| 8.01  | Intersection of Two Arrays - II
-| 8.02  | Intersection of Two Arrays - I
+| 8.01  | Find Peak Element (IMPPPPPP)
+
+
 
 
 
@@ -21,4 +24,5 @@
 | 1.01  | Guess number of higher of lower
 | 2.01  | Arranging Coins     
 | 3.01  | Valid Perfect Square
-| 4.01  | Painter Partitioning Problem        
+| 4.01  | Painter Partitioning Problem   
+| 5.01  | Koko Eating Bananas     
