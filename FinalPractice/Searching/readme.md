@@ -9,6 +9,7 @@
 | 3.03  | Find First and Last Position of Element in Sorted Array
 | 3.04  | Intersection of Two Arrays - II
 | 3.05  | Intersection of Two Arrays - I
+| 3.06  | Succesful Pairs of Spells and Potions
 | 4.01  | Search in Rotated Sorted Array
 | 4.02  | Find Minimum in Rotated Sorted Array
 | 6.01  | Search in a 2D matrix
