@@ -1,3 +1,18 @@
+# Searching
+
+| Code  | Problem Name                 
+|-------|------------------------------
+| 1.01  | Linear Search
+| 2.01  | Binary Search  
+| 3.01  | Lower Bound
+| 3.02  | Upper Bound
+| 3.02  | Find First and Last Position of Element in Sorted Array
+| 4.01  | Search in Rotated Sorted Array
+| 4.02  | Find Minimum in Rotated Sorted Array
+| 6.01  | Search in a 2D matrix
+| 8.01  | Intersection of Two Arrays - II
+| 8.02  | Intersection of Two Arrays - I
+
 
 
 ## Binary Search On Answer
