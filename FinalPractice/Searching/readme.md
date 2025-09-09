@@ -26,4 +26,6 @@
 | 2.01  | Arranging Coins     
 | 3.01  | Valid Perfect Square
 | 4.01  | Painter Partitioning Problem   
-| 5.01  | Koko Eating Bananas     
+| 5.01  | Koko Eating Bananas  
+| 6.01  | Aggressive Cows
+| 7.01  | Book Allocation a   
