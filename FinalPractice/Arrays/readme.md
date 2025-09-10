@@ -41,5 +41,12 @@
 | 6.05  | Find duplicate number  (yet to)
 
 
-## 
+## 9.
+| Code  | Problem Name                 
+|-------|------------------------------
+| 9.01  | Longest Subarray with sum k          
+| 9.02  | Total number of subarrays whose sum equals to k
+| 9.03  | Maximum sum subarray
+| 9.04  | Maximum Product subarray
+
 

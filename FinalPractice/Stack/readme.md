@@ -37,4 +37,5 @@
 | 5.05  | Largest Rectangle in Histogram
 | 5.06  | asteroid collision
 | 5.07  | Trapping Rain Water
+| 6.07  | Celebrity Problem
 
