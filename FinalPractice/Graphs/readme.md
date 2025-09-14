@@ -8,6 +8,7 @@
 |-------|------------------------
 | 1.01  | Find center of star graph
 | 2.01  | Keys and rooms
+| 3.01  | Clone a graph
 
 ## Grid Based Problems
 | Code  | Problem Name          

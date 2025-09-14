@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Note : If graph is given as edge list need to convert it to adjList. Refer leetcode 1971
+
 bool DFS_solution(vector<vector<int>> &adjList, int currVertex, int dest, unordered_set<int> &visited){
     if(currVertex == dest){
         return true;
