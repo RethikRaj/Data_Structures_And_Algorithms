@@ -11,6 +11,7 @@ public:
 
         while(low <= high){
             int mid = low + (high - low)/2;
+            // !Check if mid is the target
             if(arr[mid] == target){
                 return mid;
             }

@@ -4,6 +4,7 @@ using namespace std;
 // Solution 1 : TC: O(1) , SC : O(2*N)
 class MinStack {
 public:
+    // *pair<value, minTillNow>
     stack<pair<int,int>> s;
     MinStack() {
         
