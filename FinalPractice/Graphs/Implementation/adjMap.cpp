@@ -1,41 +1,39 @@
 #include <iostream>
 #include <vector>
-#include <list>
+#include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
 
-
-// Note : I have used vector<list<int>> and vector<list <pair <int, int> > > for unweighted and weighted graphs respectively. If the graph has vertices labelled as characters or even integers(but not in range of 0 to n-1), then use unordered_map<char, list<char>> and unordered_map<char, list <pair <char, int> > > for unweighted and weighted graphs respectively.
+//  Note : I have used vector<unordered_set<int>> and vector<unordered_map <int, int> > for unweighted and weighted graphs respectively. If the graph has vertices labelled as characters or even integers(but not in range of 0 to n-1), then use                      unordered_map<char, unordered_set<char>> and unordered_map<char, unordered_map <char, int> > for unweighted and weighted graphs respectively.
 
 class UnweightedGraph{
-    private: 
+    private:
         int V;
-        vector<list<int>> adjList;
+        vector<unordered_set<int>> adjMap;
 
     public:
         UnweightedGraph(int V){
             this->V = V;
-            adjList.resize(V);
+            adjMap.resize(V);
         }
 
-        // Add edge (u -> v). If undirected, also add v -> u
         void addEdge(int u, int v, bool undirected = true){
             if (u >= V || v >= V || u < 0 || v < 0) {
                 cout << "Invalid vertex index!" << endl;
                 return;
             }
 
-            adjList[u].push_back(v);
+            adjMap[u].insert(v);
             if(undirected){
-                adjList[v].push_back(u);
+                adjMap[v].insert(u);
             }
         }
 
-        // Print graph adjacency list
-        void displayGraph() {
-            for (int i = 0; i < V; i++) {
+        void displayGraph(){
+            for(int i=0;i<V;i++){
                 cout << i << " -> ";
-                for (auto node : adjList[i]) {
+                for(auto node : adjMap[i]){
                     cout << node << " ";
                 }
                 cout << endl;
@@ -43,43 +41,39 @@ class UnweightedGraph{
         }
 };
 
-
 class WeightedGraph{
-    private: 
+    private:
         int V;
-        vector< list <pair <int, int> > > adjList;
+        vector<unordered_map<int, int>> adjMap;
 
     public:
         WeightedGraph(int V){
             this->V = V;
-            adjList.resize(V);
+            adjMap.resize(V);
         }
 
-        // Add edge (u -> v). If undirected, also add v -> u
         void addEdge(int u, int v,int wt,bool undirected = true){
             if (u >= V || v >= V || u < 0 || v < 0) {
                 cout << "Invalid vertex index!" << endl;
                 return;
             }
 
-            adjList[u].push_back({v, wt});
+            adjMap[u][v] = wt;
             if(undirected){
-                adjList[v].push_back({u, wt});
+                adjMap[v][u] = wt;
             }
         }
 
-        // Print graph adjacency list
-        void displayGraph() {
-            for (int i = 0; i < V; i++) {
+        void displayGraph(){
+            for(int i=0;i<V;i++){
                 cout << i << " -> ";
-                for (auto node : adjList[i]) {
+                for(auto node : adjMap[i]){
                     cout << "(" << node.first << ", " << node.second << ") ";
                 }
                 cout << endl;
             }
         }
 };
-
 
 int main(){
     // UnweightedGraph g(7);
@@ -101,7 +95,4 @@ int main(){
     g.addEdge(3, 6, 6, false);
     g.addEdge(4, 6, 7, false);
     g.displayGraph();
-
-
-    return 0;
 }
