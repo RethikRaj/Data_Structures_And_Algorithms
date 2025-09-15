@@ -13,7 +13,7 @@
 ## Grid Based Problems
 | Code  | Problem Name          
 |-------|------------------------
-| 1.01  | Flood Fill 
+
 | 2.01  | Number Of Islands
 
 ## Path Problems
@@ -23,3 +23,11 @@
 | 2.01  | Given a graph, return all possible paths between 2 vertices. => (Only DFS)
 | 3.01  | Given a unweighted graph or equal weighted graph find the single src shortest path => (Only BFS)
 
+## Connected Components Based Problems and Grid Based 
+
+| Code  | Problem Name          
+|-------|------------------------
+| 1.01  | Count number of connected components
+| 2.01  | Flood Fill 
+| 3.01  | Coloring a border
+| 4.01  | Number of islands

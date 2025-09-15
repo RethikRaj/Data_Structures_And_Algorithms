@@ -38,7 +38,7 @@ public:
     }
 };
 
-// Solution 2 : IMPORTANT : WITHOUT VISITED 
+// Solution 2 : IMPORTANT : WITHOUT VISITED  but we modify the input => Ask interviewer
 class Solution {
 public:
     void solveUsingRecursion(vector<vector<int>>& image, int row, int col, int color, int &originalColor) {
