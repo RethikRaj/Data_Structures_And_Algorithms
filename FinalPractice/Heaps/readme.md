@@ -18,3 +18,9 @@
 |-------|------------------------
 | 3.01  | Merge k sorted arrays
 | 3.02  | Merge k sorted lists
+| 3.03  | Smallest Range Covering Elements from K Lists
+
+## 4. Two Heaps Pattern
+| Code  | Problem Name          
+|-------|------------------------
+| 4.01  | Find Median from Data Stream
