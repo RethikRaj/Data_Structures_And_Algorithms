@@ -5,6 +5,7 @@
 |-------|------------------------
 | 1.01  | kth largest in an array
 | 1.02  | kth smallest in an array
+| 1.03  | K Closest Points to Origin
 
 ## 2.
 | Code  | Problem Name          
